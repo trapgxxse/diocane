@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Go Out With Me?</title>
+    <style>
+        body {
+        background-color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: #000000;
+            }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #FF0000;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ciao amo</h1>
+    <img src="giphy.gif" alt="Animated heart GIF">
+    <p>lo sai che ti amo?</p>
+    
+    
+    <button onclick="showResponse('bene, perchè ti amo e ti amerò per sempre!')">si</button>
+    <button onclick="showResponse('niente, volevo solo fartelo sapere')">si, e quindi?</button>
+    <button onclick="showResponse('beh, ora lo sai, non dimenticarlo :3')">no, stai zitto</button>
+
+    <p id="response"></p>
+
+    <script>
+        function showResponse(answer) {
+            document.getElementById('response').innerText = answer;
+        }
+    </script>
+
+</body>
+</html>
